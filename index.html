@@ -8,8 +8,9 @@
 <script type="text/javascript" src="lib/jquery-1.12.0.min.js"></script>
 <style>
     body {
-        font: 10px/12px Raleway, sans;
+        font: 10px/12px Raleway, sans-serif;
         position:relative;
+        font-weight: 200;
     }
     #main-content {
         max-width:720px;
@@ -18,29 +19,50 @@
     #entete {
         background: url('img/stambroise-sthenri.jpg') center center no-repeat;
         /* background-attachment: fixed; */
+        background-color: #422999;
         background-size: cover;
         color: #ffffff;
-        padding: 20% 10% 20%;
+        padding: 10%;
     }
     h1 { 
-        font-size: 5em;
+        font-size: 9em;
         font-weight: 700;
         text-transform: lowercase;
         margin: 0;
         line-height: 40px;
     }
     h2 {
-        line-height: 2em;
+        font-size: 2.5em;
+        line-height: 4em;
         margin: 0;
         font-weight: 100;
         text-transform: lowercase;
     }
+    h3 {
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: 700;
+        padding: 2% 10%;
+    }
+    h4 {
+        font-size: 5em;
+        line-height: 50px;
+        margin: 0;
+        padding: 50px 100px 50px 0;
+    }
+    h5 {
+        text-transform: uppercase;
+        font-size: 1.25em;
+        margin: 35px 0 0;
+    }
     #resume {
-        font-size: 2em;
-        line-height: 28px;
+        font-size: 2.5em;
+        line-height: 1.5em;
         text-align: center;
         font-weight: 100;
-        padding: 5% 10% 2%;
+        padding: 5% 14%;
+        background-color: #f2f2f2;
+        color: #422999;
     }
     .calltoaction {
         text-align: center;
@@ -66,15 +88,29 @@
     }
     .projet {
         clear: both;
+        margin: 20% 0 10%;
+    }
+    .projet#first {
+        margin: 5% 0;
     }
     .projet span {
-        float: left;
-        width: 50%;
+        display: block;
+        width: 100%;
         min-height: 27.5em;
-        padding-left: 25px;
+        padding: 3% 0;
+        background-color: #f2f2f2;
+        font-size: 1.75em;
+        line-height: 1.33em;
+        /* margin: 85px 0; */
     }
+    .projet ul {
+    text-indent: 0px;
+    list-style: none;
+}
     .projet img {
         float: left;
+        margin: 0 7% 0 10%;
+        box-shadow: 1px 1px 20px #ddd;
     }
     .projet h3 {
         font-weight: 400;
@@ -91,6 +127,10 @@
         text-decoration: none;
         color: #f0f;
     }
+    #social {
+    max-width: 800px;
+    margin: 0 auto;
+}
     #social ul li  {
         width:16%;
         display: block;
@@ -98,10 +138,9 @@
         padding: 2%;
         font-size: 1.2em;
     }
-    #social h4 {
-        text-transform: uppercase;
-        font-weight: 100;
-        font-size: 1.5em;
+    #social h5 {
+        line-height: 2em;
+            margin: 0;
     }
     small {
         clear: both;
@@ -113,7 +152,6 @@
         line-height: 10em;
         font-weight: 100;
     }
-        
 </style>
 </head>
 <body>
@@ -121,65 +159,125 @@
         <h1>Mathieu Côté</h1>
         <h2>Designer graphique</h2>
     </div>
-    <div id="main-content">
-    <p id="resume">Collaborateur calme et réfléchi démontrant une forte capacité d’analyse et faisant preuve de créativité dans la résolution de&nbsp;problèmes.</p>
-    <!--<a class="calltoaction" href="#projets">Consulter mes projets</a>-->
-    <hr id="projets" />
-    <div class="projet">
-        <img height="221" width="324" src="img/comment-thumb.jpg" alt="" />
+    
+    <div id="resume">
+    <p>Je suis designer graphique et designer interactif. Je suis quelqu’un de polyvalent, curieux et réfléchi. Je travaille beaucoup avec la photographie et la typographie pour créer des textures et des contrastes forts.</p>
+    </div>
+    
+    <div id="portfolio">
+    <h3>Projets</h3>
+    
+    <div class="projet" id="first">
+        <img src="img/knockout-preview.png" alt="Doca du jour" />
+<h4>Le Knock-Out</h4>
         <span>
-        <p id="meta"><a href="">UX/UI design</a> _ <a href="">2014</a></p>
-        <h3>Commentaires d'actualité</h3>
-        <p id="description">Mon essai porte sur le design d'interface des sections commentaires dans un contexte d'actualité politique. Il s’agit d’un premier pas vers le portrait des sections commentaires québécoises.</p>
+        <h5>Objectifs</h5>
+        <ul>
+            <li>Rendre l’agenda des évènements accessibles à tous</li>
+            <li>Rendre compte de l’ambiance de la place</li>
+        </ul>
+        <h5>Solutions</h5>
+        <ul>
+            <li>Recherche photo aux évènements</li>
+            <li>Analyse de la concurrence et du milieu</li>
+            <li>Création du visuel</li>
+            <li>Balisage sémantique des évènements pour un meilleur référencement</li>
+        </ul>
+        <h5>Résultats</h5>
+        <ul>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+        </ul>
         </span>
     </div>
-    <hr />
+    
     <div class="projet">
-        <img height="221" width="324" src="img/drive-thumb.jpg" alt="" />
+        <img src="img/doca-apercu.jpg" alt="Doca du jour" />
+<h4>Doca du jour</h4>
         <span>
-        <p id="meta"><a href="">UX/UI design</a> _ <a href="">2013</a></p>
-        <h3>Google Drive</h3>
-        <p id="description">Ce projet visait à améliorer l'utilisation de l'outil de collaboration Google Drive dans un contexte étudiant. En équipe avec J. Auchu, C. Greaves, A. Ouerda</p>
+        <h5>Objectifs</h5>
+        <ul>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+        </ul>
+        <h5>Solutions</h5>
+        <ul>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+        </ul>
+        <h5>Résultats</h5>
+        <ul>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+        </ul>
         </span>
     </div>
-    <hr />
+    
     <div class="projet">
-        <img height="221" width="324" src="img/olympics-thumb.jpg" alt="" />
+        <img src="img/ursulines-preview.jpg" alt="Doca du jour" />
+<h4>Modèle 3D du Monastère des Ursulines</h4>
         <span>
-        <p id="meta"><a href="">Design graphique</a> _ <a href="">2012</a></p>
-        <h3>Olympique$</h3>
-        <p id="description">Le mandat était de concevoir en équipe d'une brochure statistique démontrant les enjeux économiques croissants au cours des dernières années. Le parallèle entre les performances athlétiques et financières s'est imposé. Un bref repérage photo nous a permis d'illustrer des icônes du sport amateur avec un certain niveau d'abstraction. Édition et graphiques en équipe avec Guillaume Proulx-Bégin (2012)</p>
+        <h5>Objectifs</h5>
+        <ul>
+            <li>Rendre accessible au public un batiment historique méconnu</li>
+            <li>Rendre le visuel du produit actuel plus convivial</li>
+            <li>Apporter nos recommandations sur le modèle 3D </li>
+        </ul>
+        <h5>Solutions</h5>
+        <ul>
+            <li>Recherche photo pour documenter les différentes sources de lumière</li>
+            <li>Analyse de la navigation à travers le modèle</li>
+            <li>Prototype fonctionnel du nouveau design à développer</li>
+            <li>Tests utilisateurs individuels et en groupe</li>
+            <li>Rapport de reccommandations sur l’ensemble des points à améliorer</li>
+        </ul>
+        <h5>Résultats</h5>
+        <ul>
+            <li>Meilleure compréhension des enjeux organisationnels et techniques du projettt</li>
+        </ul>
         </span>
     </div>
-    <hr />
+    
     <div class="projet">
-        <img height="221" width="324" src="img/reflections-thumb.jpg" alt="" />
+        <img src="img/citedunord-apercu.jpg" alt="Doca du jour" />
+<h4>Cité-du-Nord</h4>
         <span>
-        <p id="meta"><a href="">Photographie</a> _ <a href="">2012</a></p>
-        <h3>Réflexions</h3>
-        <p id="description">Ce projet s’est défini de façon très instinctive. Je me suis attardé à un lieu à priori vide d’intérêt où l’on ne fait que passer. Les baies vitrées de l’aire d’attente de la gare du Palais possèdent une qualité de réflexion impressionnante. En ignorant le cadre de ces surfaces réfléchissantes, les deux réalités présentées fusionnent. Cela permet de superposer plusieurs niveaux de lecture et créer des relations entre les éléments.</p>
+        <h5>Objectifs</h5>
+        <ul>
+            <li>Concevoir à nouveau responsive</li>
+            <li>Migration intégrale des contenu</li>
+            <li>Promouvoir la distinction coopérative de la Caisse</li>
+        </ul>
+        <h5>Solutions</h5>
+        <ul>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+        </ul>
+        <h5>Résultats</h5>
+        <ul>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+            <li>Lorem istor laruem ipsum.</li>
+        </ul>
         </span>
     </div>
-    <hr />
-    <div class="projet">
-        <img height="221" width="324" src="img/folioscope-thumb.jpg" alt="" />
-        <span>
-        <p id="meta"><a href="">Design graphique</a> _ <a href="">2012</a></p>
-        <h3>Folioscope</h3>
-        <p id="description">Ce flipbook permet un aperçu instantané de mon identité graphique. Il regroupe d'un côté ma signature animée et de l'autre 80 images réalisées entre 2007 et 2012. Contrairement au portfolio classique, il permet une intégration sans égard au contexte de réalisation tout en donnant une ambiance visuelle forte. Une analyse page par page met en évidence les tendances développées au cours des années. </p>
-        </span>
     </div>
+    
     <hr />
     <div id="social">
     <ul>
-    <li><h4>LinkedIn</h4>Ma face, mon curriculum vitæ.</li>
-    <li><h4>Tumblr</h4>Un ramassis photographique.</li>
-    <li><h4>Pinterest</h4>Recherche visuelle.</li>
-    <li><h4>Behance</h4>Ma face, mon curriculum vitæ.</li>
-    <li><h4>C.V.</h4>La version PDF pour les vrais.</li>    
+    <li><h5>LinkedIn</h5>Ma face, mon curriculum vitæ.</li>
+    <li><h5>Tumblr</h5>Un ramassis photographique.</li>
+    <li><h5>Pinterest</h5>Recherche visuelle.</li>
+    <li><h5>Behance</h5>Ma face, mon curriculum vitæ.</li>
+    <li><h5>C.V.</h5>La version PDF pour les vrais.</li>    
     </ul>
     </div>
-    </div><!-- #main-content -->
     <small>© 2016 Mathieu Côté, tous droits réservés.</small>
 <script type="text/javascript" src="lib/retina-1.3.0/retina.min.js"></script>
 </body>
