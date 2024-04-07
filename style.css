@@ -4,17 +4,25 @@
         position:relative;
         font-weight: 300;
         color:#222;
+        display: flex;
+        align-items: center;
+        height: 100vh;
     }
-    a { color:#3F65C8; }
+    a { 
+        color:#3F65C8; 
+        border-bottom:1px #3F65C8 solid; 
+        text-decoration:none; 
+    }
+    a:hover { 
+        background-color: #f4f4f4; 
+    }
     div { 
-        max-width:528px; 
+        max-width:600px; 
         padding: 0 24px;
         margin: 0 auto;
     }
-    #resume {
-    }
-    #resume p:first-child {
-        font-size: 24px;
+    .large {
+        font-size: 32px;
+        font-weight: 200;
     }
     small { color:#444; }
-    h1 { font-size:64px; line-height: 1; }
