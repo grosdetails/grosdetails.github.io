@@ -4,13 +4,15 @@
         position:relative;
         font-weight: 300;
         color:#222;
+    }
+    #resume {
         display: flex;
         align-items: center;
         height: 100vh;
     }
     a { 
         color:#3F65C8; 
-        border-bottom:1px #3F65C8 solid; 
+        border-bottom:0.05em #3F65C8 solid;
         text-decoration:none; 
     }
     a:hover { 
